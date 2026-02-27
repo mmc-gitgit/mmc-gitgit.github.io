@@ -1,0 +1,18 @@
+/* CSS comment - apparently // does not work. fsck. */
+/* somehow, the CSS is being cached (some of the time). fsck. another
+  reason to learn inline CSS (at least for small amounts of CSS */
+/* workaround: in DevTools/sources, open the .css file
+   and press F5. fsck. */
+
+/* empty rulesets are frowned upon, apparently */
+html {
+    background-color: #c0c0c0;
+} /* */
+p { /* paragraphs */
+  color: #69870a;
+  /*color: green;     /* */
+} /* */
+.done {
+  color: darkgrey;
+  text-decoration: line-through solid black 2px;
+} /* */
