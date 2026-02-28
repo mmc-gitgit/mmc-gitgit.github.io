@@ -1,4 +1,5 @@
 ###Some files that i used while trying to learn some parts of web dev via MDN
+i thought the above woud be h3 ---- wtaf?
 TODO
 * learn markdown --> look at ./markdown.md
 * replace /index.html with [the correct file](https://martym.free.nf/mdn/index.html)
