@@ -1,0 +1,72 @@
+<!-- html comment -->
+<!doctype html>  <!-- often, but not necessarily UPPERCASE -->
+<html lang="en">   <!-- lang="en-us" --> 
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>MDN coursework</title>
+        <link href="./styles/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>html sucks</h3>
+        <!-- similar for  <h1> ... </h1> thru <h6> ... </h6> -->
+        <p>Instructions for life:</p>
+        <ul>
+        <li>Eat</li>
+        <li>Sleep</li>
+        <li>Ribbit</li>
+        </ul>
+        <p>some nore text in a paragraph...</p>
+        <img src="../frog.jpg" alt="a nice pic of a green frog" /><br>
+        <!-- apparently cannot embed html in alt="...." -->
+        <!-- it is OK to use attribute='single quotes' -->
+<!--
+        <img src="./jeri-ryanx.jpg" alt="Jeri Ryan in a bikini" /><br>
+-->
+<!--
+        <a href="./jeri-ryan.jpg" target="_blank" rel="noopener noreferrer">
+            Jeri</a><br> <!-- open in new tab -->
+        <button>Change User</button><br>
+        <a href="../index.html">home</a>for the root page<br>
+
+        <script>
+            // js comment (also can use /* ... */)
+            function toggleDone(e) {
+                if (!e.target.className) {
+                    e.target.className = "done";
+//console.log("li done");
+                } else {
+                    e.target.className = "";
+//console.log("li undone");
+                }
+            }
+
+            const listItems = document.querySelectorAll("li");
+            listItems.forEach((item) => {
+                item.addEventListener("click", toggleDone);
+            });
+
+            const frog = document.querySelector("img");
+            frog.addEventListener("click", () => {
+                const s1 = frog.getAttribute("src");
+//                console.log("src: \"" + s1 + "\"");
+                const foo = prompt("src: \"" + s1 + "\"");
+            });
+
+            let myButton = document.querySelector("button");
+            let myHeading = document.querySelector("h3");
+            function setUserName() {
+                const myName = prompt("Please enter your name.");
+                localStorage.setItem("name", myName);
+                myHeading.textContent = `${myName} says html sucks`;
+            }
+            if (!localStorage.getItem("name")) {
+                setUserName();
+            } else {
+                const storedName = localStorage.getItem("name");
+                myHeading.textContent = `${storedName} says html sucks`;
+            }
+            console.log("js done");
+        </script
+    </body>
+</html>
