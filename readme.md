@@ -6,4 +6,5 @@ TODO
 * (WIP) learn markdown --> look at ./markdown.md
 * (done) replace /index.html with [the correct file](https://martym.free.nf/mdn/index.html)
 * (TODO) make sure the .html .css .js .etc files are in proper places on github source tree
+* find out how to include (eg) ./mdn/* in this site
 * etc
